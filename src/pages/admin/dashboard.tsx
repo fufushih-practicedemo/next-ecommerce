@@ -106,8 +106,8 @@ const AdminDashoardPage = () => {
         <div>
           <ul>
             <li>
-              <Link href="/admin/dashboard">
-                <a className="font-bold">Dashboard</a>
+              <Link href="/admin/dashboard" className="font-bold">
+                Dashboard
               </Link>
             </li>
             <li>

@@ -47,29 +47,27 @@ const Layout = ({ title, children }: Props) => {
         <header>
           <nav className="flex h-12 items-center px-4 justify-between shadow-md">
             <div>
-              <Link href="/">
-                <a className="text-lg font-bold px-2">Ecommerce</a>
+              <Link href="/" className="text-lg font-bold px-2">
+                Ecommerce
               </Link>
-              <Link href="/">
-                <a className="p-2">Home</a>
+              <Link href="/" className="p-2">
+                Home
               </Link>
-              <Link href="/news">
-                <a className="p-2">News</a>
+              <Link href="/news" className="p-2">
+                News
               </Link>
-              <Link href="/product">
-                <a className="p-2">Products</a>
+              <Link href="/product" className="p-2">
+                Products
               </Link>
             </div>
             <div>
-              <Link href="/cart">
-                <a className="p-2">
+              <Link href="/cart" className="p-2">
                   Cart
                   {cartItemsCount > 0 && (
                     <span className="ml-1 rounded-full bg-red-600 px-2 py-1 text-xs font-bold text-white">
                       {cartItemsCount}
                     </span>
                   )}
-                </a>
               </Link>
               {status === 'loading' ? (
                 'Loading'
@@ -117,8 +115,8 @@ const Layout = ({ title, children }: Props) => {
                   </Menu.Items>
                 </Menu>
               ) : (
-                <Link href="/login">
-                  <a className="p-2">Login</a>
+                <Link href="/login" className="p-2">
+                  Login
                 </Link>
               )}
             </div>

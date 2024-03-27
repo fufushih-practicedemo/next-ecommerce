@@ -222,8 +222,7 @@ const OrderPage = () => {
                   {orderItems.map((item) => (
                     <tr key={item._id} className="border-b">
                       <td>
-                        <Link href={`/product/${item.slug}`}>
-                          <a className="flex items-center">
+                        <Link href={`/product/${item.slug}`} className="flex items-center">
                             <Image
                               src={item.image}
                               alt={item.name}
@@ -232,7 +231,6 @@ const OrderPage = () => {
                             ></Image>
                             &nbsp;
                             {item.name}
-                          </a>
                         </Link>
                       </td>
                       <td className=" p-5 text-right">{item.quantity}</td>

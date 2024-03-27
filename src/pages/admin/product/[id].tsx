@@ -146,8 +146,8 @@ const AdminProductEditPage = () => {
               <Link href="/admin/orders">Orders</Link>
             </li>
             <li>
-              <Link href="/admin/products">
-                <a className="font-bold">Products</a>
+              <Link href="/admin/products" className="font-bold">
+                Products
               </Link>
             </li>
             <li>

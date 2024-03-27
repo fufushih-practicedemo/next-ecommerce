@@ -18,7 +18,6 @@ const NewsPage: NextPage<Props> = ({ posts }) => {
           return (
             <div key={index} className="card col-span-2 col-start-2 ">
               <Link href={`/news/${el.id}`}>
-                <a>
                   <div className="flex">
                     {el.cover && (
                       <Image
@@ -35,7 +34,6 @@ const NewsPage: NextPage<Props> = ({ posts }) => {
                       <span>{el.created_time}</span>
                     </div>
                   </div>
-                </a>
               </Link>
             </div>
           );
